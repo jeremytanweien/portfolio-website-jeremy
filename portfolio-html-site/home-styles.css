@@ -1,0 +1,89 @@
+/* Master Styles */
+body {
+    margin:0px;
+}
+
+.container{
+    display:grid;
+    grid-gap: 20px;
+}
+
+
+/* Nav Styles */
+.nav-wrapper{
+    display:flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side{
+    display:flex;
+}
+
+/* Locates sequentially what is inside the nav-wrapper, within the left-side div class, and applies to all the divs */
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-wrapper > .right-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+/* transition will enable dynamic highlighting of nav elements */
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+    color: #8a8ae4;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}   
+
+.nav-link-wrapper a:hover{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* Portfolio Styles */
+
+
+.content-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 20px;
+}
+
+.portfolio-img-background{
+    height:300px;
+    width:100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.img-text-wrapper{
+    position:relative;
+    top:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
