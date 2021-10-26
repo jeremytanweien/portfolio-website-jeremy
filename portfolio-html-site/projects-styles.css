@@ -47,11 +47,11 @@ body {
 }
 
 .nav-link-wrapper:hover{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid orangered;
 }   
 
 .nav-link-wrapper a:hover{
-    color: black;
+    color: orangered;
     text-decoration: none;
     transition: color 0.5s;
 }

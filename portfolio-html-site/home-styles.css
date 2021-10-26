@@ -1,43 +1,67 @@
 /* Master Styles */
 body {
-    margin:0px;
+    margin:20px;
 }
 
-.container{
+/* .container{
     display:grid;
     grid-gap: 20px;
+} */
+
+/* Apply this font to all elements */
+*{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-/* Nav Styles */
+/* Nav Styles - center the navigation bar and apply vertical padding*/
 .nav-wrapper{
     display:flex;
-    justify-content: space-between;
-    padding: 38px;
+    justify-content: center; 
+    margin: 30px;
 }
 
-.left-side{
+/* Big name above navigation bar */
+.bigName{
+    display:flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 50px;
+    color:slategrey;
+}
+
+/* Put menuItems in flexbox to display them horizontally */
+.menuItems{
     display:flex;
 }
 
-/* Locates sequentially what is inside the nav-wrapper, within the left-side div class, and applies to all the divs */
-.nav-wrapper > .left-side > div{
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
+/* Apply horizontal spacing to menuItems and uppercase transform all text*/
+.nav-wrapper > .menuItems > div{
+    margin-right: 30px;
+    font-size: 1em;
+    text-transform: uppercase;   
 }
 
-.nav-wrapper > .right-side > div{
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
+/* Center opening statement */
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.experience{
+    display:flex;
+    justify-content: left;
+}
+
+.education{
+    display: flex;
+    justify-content:right;
 }
 
 /* transition will enable dynamic highlighting of nav elements */
 .nav-link-wrapper {
     height: 22px;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+    transition: border-bottom 0.1s;
 }
 
 .nav-link-wrapper a{
@@ -47,14 +71,26 @@ body {
 }
 
 .nav-link-wrapper:hover{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid orangered;
 }   
 
 .nav-link-wrapper a:hover{
-    color: black;
+    color: orangered;
     text-decoration: none;
     transition: color 0.5s;
 }
+
+
+/* Experience Icons */
+
+.experience-img-background{
+    height: 125px;
+    width: 125px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 /* Portfolio Styles */
 
