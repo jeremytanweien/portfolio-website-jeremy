@@ -60,7 +60,17 @@ body {
     display:flex;
     justify-content: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    height: 75px;
+}
+
+.projectTitle{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:slategrey;
 }
 
 /* .education{
@@ -103,8 +113,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 
@@ -129,7 +139,7 @@ body {
 .experience-caption{
     position:relative;
     top:0;
-    display:flex;
+    display:block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -137,5 +147,7 @@ body {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 0.5;
+    /* using display:flex doesn't allow me to achieve tighter line spacing for the caption, so block or in-line used instead */
 }
