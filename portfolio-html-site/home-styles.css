@@ -47,15 +47,28 @@ body {
     justify-content: center;
 }
 
-.experience{
+.experienceTitle{
     display:flex;
-    justify-content: left;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:slategrey;
 }
 
-.education{
-    display: flex;
-    justify-content:right;
+.experienceContainer{
+    display:flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
+
+/* .education{
+    display:flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+} */
 
 /* transition will enable dynamic highlighting of nav elements */
 .nav-link-wrapper {
@@ -84,34 +97,36 @@ body {
 /* Experience Icons */
 
 .experience-img-background{
+    margin-top: 20px;
     height: 125px;
     width: 125px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
 /* Portfolio Styles */
 
 
-.content-wrapper{
+/* .content-wrapper{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: row;
     grid-gap: 20px;
-}
+} */
 
-.portfolio-img-background{
+/* .portfolio-img-background{
     height:300px;
     width:100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+} */
 
-}
-
-.img-text-wrapper{
+.experience-caption{
     position:relative;
     top:0;
     display:flex;
@@ -122,4 +137,5 @@ body {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 15px;
 }
